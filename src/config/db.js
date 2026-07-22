@@ -1,0 +1,12 @@
+import mongoose from "mongoose";
+
+export const connectDB = async () => {
+  try {
+    const dbURI = process.env.MONGODB_URI;
+    mongoose.connect(dbURI);
+    console.log("Conexión a la base de datos establecida");
+  } catch (error) {
+    console.error("Error al conectar a la base de datos:", error);
+    process.exit(1);
+  }
+};
