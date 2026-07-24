@@ -12,7 +12,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://prismatic-torrone-e6f045.netlify.app/",
+      "https://prismatic-torrone-e6f045.netlify.app",
     ],
   }),
 );
